@@ -25,7 +25,7 @@ const Login = () => {
 
     setError("")
 
-    // Login API call
+    // Login API call 
   }
 
   return (
@@ -48,7 +48,9 @@ const Login = () => {
           {error && <p className='text-xs text-red-500 pb-1'>{error}</p>}
 
           <button type='submit' className='btn-primary'>Login</button>
-          <p className='text-sm text-center mt-4'>Not registered yet?{" "} <Link to='/signUp' className='font-medium text-primary underline'>Create an account</Link></p>
+          <p className='text-sm text-center mt-4'>Not registered yet?{" "} 
+            <Link to='/signUp' className='font-medium text-primary underline'>Create an account</Link>
+          </p>
         </form>
       </div>
     </div>
