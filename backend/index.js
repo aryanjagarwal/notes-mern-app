@@ -19,9 +19,7 @@ app.use(express.json());
 app.use(
   cors(
     {
-        origin: ["https://notes-mern-app-ary.vercel.app"],
-        methods: ["POST", "GET", "PUT", "DELETE"],
-        credentials: true
+      origin: "*",
     }
   )
 );
