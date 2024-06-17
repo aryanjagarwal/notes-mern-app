@@ -5,6 +5,14 @@ import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 
 function App() {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('https://notes-ary-app-api.vercel.app/signup', {fullName, email, password})
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
+  }
+  
   return (
     <div>
       <Router>
