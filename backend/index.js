@@ -17,9 +17,13 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 
 app.use(
-  cors({
-    origin: "*",
-  })
+  cors(
+    {
+        origin: ["https://notes-app-mern-aryan.vercel.app"],
+        methods: ["POST", "GET", "PUT", "DELETE"],
+        credentials: true
+    }
+  )
 );
 
 app.get("/", (req, res) => {
